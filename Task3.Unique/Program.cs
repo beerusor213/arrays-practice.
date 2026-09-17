@@ -1,4 +1,4 @@
-﻿uusing System;
+﻿using System;
 
 namespace Task3.Unique
 {
@@ -7,7 +7,7 @@ namespace Task3.Unique
         static bool IsExists(int[] a, int b)
         {
             foreach(int el in a)
-            if (a==b) return true;
+            if (el==b) return true;
             return false;
         }
 
@@ -15,9 +15,9 @@ namespace Task3.Unique
         {
             int[] arr=new int[10];
             Random random=new Random();
-            for(int i=0;i<arr.Lenght;i++)
+            for(int i=0;i<arr.Length;i++)
             arr[i]=random.Next(1,6);
-            System.Console.WriteLine(string.join(", ", arr));
+            System.Console.WriteLine(string.Join(", ", arr));
             int j=0;
             int[] t=new int[0];
             foreach(int el in arr)
